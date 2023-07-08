@@ -1,0 +1,6 @@
+SetMillisecondsPerGameMinute(60000)
+RegisterNetEvent("zvrealtime:event")
+AddEventHandler("zvrealtime:event", function(h, m, s)
+	NetworkOverrideClockTime(h, m, s)
+end)
+TriggerServerEvent("zvrealtime:event")
